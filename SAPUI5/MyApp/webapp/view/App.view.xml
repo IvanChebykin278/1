@@ -4,6 +4,7 @@
 	xmlns:core="sap.ui.core"
 	xmlns:l="sap.ui.layout"
 	xmlns:f="sap.ui.layout.form"
+	xmlns:c="opensap.myapp.control"
 	xmlns="sap.m"
 	controllerName="opensap.myapp.controller.App">
 	<App>
