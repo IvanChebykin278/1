@@ -14,8 +14,32 @@ sap.ui.define([
 		init : function () {
 			
 		},
-		renderer : function (oRM, oControl) {
+		renderer : function (oRm, oControl) {
+			var numberOfImages = oControl.getImages().length;
 			
+			oRm.write("<div"); 
+        	oRm.writeControlData(oControl);
+			oRm.write(">");
+			
+			oRm.write("<figure");
+			oRm.write(">");
+			
+			for(var i = 0; i < numberOfImages; i++) {
+				oRm.write("<figure");
+				oRm.write(">");
+				
+				oRm.write("<img>");
+				
+				oRm.write("<figcaption");
+				oRm.write(">");
+				oRm.write("");
+				oRm.write("</figcaption>");
+				
+				oRm.write("</figure>");
+			}
+			
+			oRm.write("</figure>");
+			oRm.write("<div>");
 		}
 	});
 });
