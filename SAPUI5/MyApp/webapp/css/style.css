@@ -1,0 +1,61 @@
+/*Images slider*/
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+
+@keyframes slidy {
+	0% {transform: translateX(0%);}
+	100% {transform: translateX(-100%);}
+}
+
+@keyframes damping {
+	0% {opacity: 0;}
+	20% {opacity: 1;}
+	80% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+.figureStyle { 
+  margin: 0; 
+  background: #101010;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+  box-sizing: border-box;
+}
+
+.captionedGallery { 
+  overflow: hidden;
+  background-color: black;
+  box-sizing: border-box; 
+}
+
+.slider { 
+  position: relative; 
+  font-size: 0; 
+  animation-name: slidy, damping;
+  animation-iteration-count: infinite;
+  box-sizing: border-box;
+}
+
+.pageContainer { 
+  height: auto;
+  display: inline-block;  
+  position: inherit; 
+  box-sizing: border-box;
+}
+
+.imgStyle { 
+  width: 100%; 
+  height: auto;
+  box-sizing: border-box; 
+}
+
+.captionStyle { 
+  position: absolute; 
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; 
+  width: 100%;
+  font-size: 2rem; 
+  padding: .6rem;
+  box-sizing: border-box; 
+}
+/*Images slider*/
