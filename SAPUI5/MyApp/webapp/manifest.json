@@ -67,8 +67,19 @@
 					},
 					"": {
 						"dataSource": "ES5"
+					},
+					"images": {
+						"type": "sap.ui.model.json.JSONModel",
+						"uri": "model/Images.json"
 					}
+				},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
 				}
+			]
+		}
 	}
 }
 

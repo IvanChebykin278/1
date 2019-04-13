@@ -1,5 +1,20 @@
 {
 	"images" : [
-			{}
+			{
+				"url" : "http://st-gdefon.gallery.world/wallpapers_original/543710_gallery.world.jpg?9b30f88865a6ee068aa988b568d8492f",
+				"alt" : "A"
+			},
+			{
+				"url" : "https://yandex.ru/images/aN52dzl92/146d71nsLOG/8O3LchmHpUykGLYADelcLQfMQd60bOyv7vYdowEfrdqtpIUtpS57q4rcCrbvx2ppT3sUoe1iAEKdBkgMcHWyUvCqX_caUPcIsZrhF8",
+				"alt" : "B"
+			},
+			{
+				"url" : "https://look.com.ua/pic/201306/1920x1080/look.com.ua-70018.jpg",
+				"alt" : "C"
+			},
+			{
+				"url" : "https://avatars.mds.yandex.net/get-pdb/1244951/976a1f40-0b09-464a-a322-65bafe463a5f/s1200?webp=false",
+				"alt" : "D"
+			}
 		]
 }
