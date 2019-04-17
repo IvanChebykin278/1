@@ -5,7 +5,7 @@ sap.ui.define([
 	return Control.extend("opensap.myapp.control.ImagesSlider", {
 		metadata : {
 			properties: {
-				images: {type: "object[]", defaultValue: [{}]},
+				images: {type: "object[]", defaultValue: []},
 				width: {type: "sap.ui.core.CSSSize", defaultValue: "100%"},
 				height: {type: "sap.ui.core.CSSSize", defaultValue: "auto"},
 				slideScrollingTime: {type: "float", defaultValue: 5}
@@ -15,6 +15,7 @@ sap.ui.define([
 			
 		},
 		renderer : function (oRm, oControl) {
+
 			var numberOfImages = oControl.getImages().length;
 			var slideScrollingTime = oControl.getSlideScrollingTime();
 			var sliderScrollingTime = slideScrollingTime * numberOfImages;

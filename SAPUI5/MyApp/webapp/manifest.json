@@ -10,11 +10,11 @@
 			"version": "1.0.0"
 		},
 		"dataSources": {
-			"ES5": {
-				"uri": "/destinations/ES5/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/",
+			"ODataModelTest": {
+				"uri": "/destinations/odata/V2/OData/OData.svc/",
 				"type": "OData",
 				"settings": {
-				"odataVersion": "2.0"
+					"odataVersion": "2.0"
 				}
 			}
 		}
@@ -27,9 +27,7 @@
 			"tablet": true,
 			"phone": true
 		},
-		"supportedThemes": [
-			"sap_bluecrystal"
-		]
+		"supportedThemes": ["sap_bluecrystal"]
 	},
 	"sap.ui5": {
 		"_version": "1.2.0",
@@ -59,27 +57,27 @@
 			"cozy": true
 		},
 		"models": {
-					"i18n": {
-						"type": "sap.ui.model.resource.ResourceModel",
-						"settings": {
-							"bundleName": "opensap.myapp.i18n.i18n"
-						}
-					},
-					"": {
-						"dataSource": "ES5"
-					},
-					"images": {
-						"type": "sap.ui.model.json.JSONModel",
-						"uri": "model/Images.json"
-					}
-				},
-		"resources": {
-			"css": [
-				{
-					"uri": "css/style.css"
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "opensap.myapp.i18n.i18n"
 				}
-			]
+			},
+			"images": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/Images.json"
+			},
+			"": {
+				"dataSource": "ODataModelTest",
+				"settings": {
+					"synchronizationMode" : "None"
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
 		}
 	}
 }
-

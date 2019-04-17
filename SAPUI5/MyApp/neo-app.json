@@ -26,6 +26,14 @@
         "name": "ES5"
       },
       "description": "ES5 Demo Service"
+    },
+    {
+      "path": "/destinations/odata",
+      "target": {
+        "type": "destination",
+        "name": "odata"
+      },
+      "description": "OData demo service"
     }
   ]
 }
