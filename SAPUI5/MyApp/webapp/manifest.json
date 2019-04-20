@@ -67,7 +67,7 @@
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/Images.json"
 			},
-			"": {
+			"products": {
 				"dataSource": "ODataModelTest",
 				"settings": {
 					"synchronizationMode" : "None"
@@ -98,6 +98,11 @@
 			  "pattern": "products",
 			  "name": "products",
 			  "target": "products"
+			},
+			{
+			  "pattern": "supplier/{productPath}",
+			  "name": "supplier",
+			  "target": "supplier"
 			}
 		  ],
 		  "targets": {
@@ -108,6 +113,10 @@
 			"products": {
 			  "viewId": "products",
 			  "viewName": "Products"
+			},
+			"supplier": {
+				"viewId": "supplier",
+				"viewName": "Supplier"
 			}
 		  }
 		}

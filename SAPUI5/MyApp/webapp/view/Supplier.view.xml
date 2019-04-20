@@ -1,0 +1,71 @@
+<xml:View
+		controllerName="opensap.myapp.controller.Supplier"
+		xmlns:m="sap.m"
+		xmlns:l="sap.ui.layout"
+		xmlns="sap.ui.layout.form"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:core="sap.ui.core">
+	<m:Page
+		showNavButton="true"
+		navButtonPress=".onNavBack">
+			<m:VBox class="sapUiSmallMargin">
+				<Form id="supplierForm" editable="false">
+					<title>
+						<core:Title text="{i18n>supplierFormTitle}: {products>ID}"/>
+					</title>
+					<layout>
+						<ResponsiveGridLayout
+							labelSpanXL="2"
+							labelSpanL="2"
+							labelSpanM="12"
+							labelSpanS="12"
+							adjustLabelSpan="false"
+							emptySpanXL="0"
+							emptySpanL="0"
+							emptySpanM="0"
+							emptySpanS="0"
+							columnsXL="2"
+							columnsL="2"
+							columnsM="2"
+							singleContainerFullSize="false"/>
+					</layout>
+					<formContainers>
+						<FormContainer title="{i18n>supplierTitle}">
+							<formElements>
+								<FormElement label="{i18n>supplierName}">
+									<fields>
+										<m:Text text="{products>Supplier/Name}" id="nameText"/>
+									</fields>
+								</FormElement>
+									<FormElement label="{i18n>supplierStreet}">
+									<fields>
+										<m:Text text="{products>Supplier/Address/Street}" id="streetText"/>
+									</fields>
+								</FormElement>
+								<FormElement label="{i18n>supplierCity}">
+									<fields>
+										<m:Text text="{products>Supplier/Address/City}" id="cityText"/>
+									</fields>
+								</FormElement>
+								<FormElement label="{i18n>supplierState}">
+									<fields>
+										<m:Text text="{products>Supplier/Address/State}" id="stateText"/>
+									</fields>
+								</FormElement>
+								<FormElement label="{i18n>supplierZipCod}">
+									<fields>
+										<m:Text text="{products>Supplier/Address/ZipCode}" id="zipCodeText"/>
+									</fields>
+								</FormElement>
+								<FormElement label="{i18n>supplierCountry}">
+									<fields>
+										<m:Text text="{products>Supplier/Address/Country}" id="countryText"/>
+									</fields>
+								</FormElement>
+							</formElements>
+						</FormContainer>
+					</formContainers>
+				</Form>
+			</m:VBox>
+	</m:Page>
+</xml:View>

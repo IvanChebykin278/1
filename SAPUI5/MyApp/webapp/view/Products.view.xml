@@ -4,61 +4,62 @@
 		xmlns:t="sap.ui.table"
 		xmlns:mvc="sap.ui.core.mvc">
 			<t:Table
-				title="Product"
+				id="table"
+				class="sapUiSmallMargin"
+				title="{i18n>tableTitle}"
 				rows="{
-					path: '/Products',
+					path: 'products>/Products',
 					parameters : {
 						expand: 'Category, Supplier'
 					}
-				}"
-				selectionMode="MultiToggle">
+				}">
 				<t:columns>
 					<t:Column>
-						<Label text="Product id"/>
+						<Label text="{i18n>tableProductId}"/>
 						<t:template>
-							<Text text="{path: 'ID'}"/>
+							<Text text="{path: 'products>ID'}"/>
 								</t:template>
 						</t:Column>
 					<t:Column>
-						<Label text="Product name"/>
+						<Label text="{i18n>tableProductName}"/>
 						<t:template>
-							<Text text="{path: 'Name'}"/>
+							<Text text="{path: 'products>Name'}"/>
 						</t:template>
 					</t:Column>
 					<t:Column>
-						<Label text="Category"/>
+						<Label text="{i18n>tableCategory}"/>
 						<t:template>
-							<Text text="{path: 'Category/Name'}"/>
+							<Text text="{path: 'products>Category/Name'}"/>
 						</t:template>
 					</t:Column>
 					<t:Column>
-						<Label text="Supllier"/>
+						<Label text="{i18n>tableSupplier}"/>
 						<t:template>
-							<Button text="Show supllier"/>
+							<Button text="{i18n>tableButtonShowSupplier}" press="onShowSupplier"/>
 						</t:template>
 					</t:Column>
 					<t:Column>
-						<Label text="Description"/>
+						<Label text="{i18n>tableDescription}"/>
 						<t:template>
-							<Button text="Show description" press="onShowDescription"/>
+							<Text text="{products>Description}"/>
 						</t:template>
 					</t:Column>
 					<t:Column>
-						<Label text="Price"/>
+						<Label text="{i18n>tablePrice}"/>
 						<t:template>
-							<Text text="{path: 'Price'}"/>
+							<Text text="{path: 'products>Price'}"/>
 						</t:template>
 					</t:Column>
 					<t:Column>
-						<Label text="Release date"/>
+						<Label text="{i18n>tableReleaseDate}"/>
 						<t:template>
-							<Text text="{path: 'ReleaseDate', type: 'sap.ui.model.type.DateTime'}"/>
+							<Text text="{path: 'products>ReleaseDate', type: 'sap.ui.model.type.DateTime'}"/>
 						</t:template>
 					</t:Column>
 					<t:Column>
-						<Label text="DiscontinuedDate"/>
+						<Label text="{i18n>tableDiscontinuedDate}"/>
 						<t:template>
-							<Text text="{path: 'DiscontinuedDate', type: 'sap.ui.model.type.DateTime'}"/>
+							<Text text="{path: 'products>DiscontinuedDate', type: 'sap.ui.model.type.DateTime'}"/>
 						</t:template>
 					</t:Column>
 				</t:columns>

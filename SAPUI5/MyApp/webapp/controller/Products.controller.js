@@ -5,9 +5,13 @@ sap.ui.define([
 			"use strict";
 
 			return Controller.extend("opensap.myapp.controller.Products", {
-				onShowDescription: function(oEvent) {
-					var oBundel = this.getView().getModel().getProperty("Description", oEvent.getSource().getBindingContext());
-					MessageToast.show(oBundel);
+				
+				onShowSupplier: function(oEvent) {
+					var oItem = oEvent.getSource();
+					var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+					oRouter.navTo("supplier", {
+						productPath: oItem.getBindingContext("products").getPath().substr(1)
+					});
 				}
 			});
 	});
