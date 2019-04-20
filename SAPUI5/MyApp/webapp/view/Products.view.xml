@@ -47,7 +47,7 @@
 					<t:Column>
 						<Label text="{i18n>tablePrice}"/>
 						<t:template>
-							<Text text="{path: 'products>Price'}"/>
+							<Text text="{path: 'products>Price'} $"/>
 						</t:template>
 					</t:Column>
 					<t:Column>

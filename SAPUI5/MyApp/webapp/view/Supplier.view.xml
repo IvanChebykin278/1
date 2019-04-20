@@ -52,7 +52,7 @@
 										<m:Text text="{products>Supplier/Address/State}" id="stateText"/>
 									</fields>
 								</FormElement>
-								<FormElement label="{i18n>supplierZipCod}">
+								<FormElement label="{i18n>supplierZipCode}">
 									<fields>
 										<m:Text text="{products>Supplier/Address/ZipCode}" id="zipCodeText"/>
 									</fields>
