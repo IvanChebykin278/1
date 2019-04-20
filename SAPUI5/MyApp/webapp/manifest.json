@@ -78,6 +78,38 @@
 			"css": [{
 				"uri": "css/style.css"
 			}]
+		},
+		"routing": {
+		  "config": {
+			"routerClass": "sap.m.routing.Router",
+			"viewType": "XML",
+			"viewPath": "opensap.myapp.view",
+			"controlId": "app",
+			"controlAggregation": "pages",
+			"async": true
+		  },
+		  "routes": [
+			{
+			  "pattern": "",
+			  "name": "overview",
+			  "target": "overview"
+			},
+			{
+			  "pattern": "products",
+			  "name": "products",
+			  "target": "products"
+			}
+		  ],
+		  "targets": {
+			"overview": {
+			  "viewId": "overview",
+			  "viewName": "Overview"
+			},
+			"products": {
+			  "viewId": "products",
+			  "viewName": "Products"
+			}
+		  }
 		}
 	}
 }

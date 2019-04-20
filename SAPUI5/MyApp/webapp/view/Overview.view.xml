@@ -1,0 +1,10 @@
+<mvc:View
+		controllerName="opensap.myapp.controller.App"
+		xmlns="sap.m"
+		xmlns:mvc="sap.ui.core.mvc">
+	<Page title="homePageTitle">
+		<content>
+			<mvc:XMLView viewName="opensap.myapp.view.Products"/>
+		</content>
+	</Page>
+</mvc:View>

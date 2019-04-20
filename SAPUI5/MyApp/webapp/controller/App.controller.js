@@ -4,10 +4,7 @@ sap.ui.define([
 			"use strict";
 
 			return Controller.extend("opensap.myapp.controller.App", {
-				onSliderMoved: function (oEvent) {
-					var value = oEvent.getParameter("value");
-					this.byId("panelForGridList").setWidth(value + "%");
-				}
+				
 			});
 	});
 
